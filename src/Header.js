@@ -21,22 +21,20 @@ class Header extends Component {
 				data-target="#collapsingNavbar">
 				<span className="navbar-toggler-icon"></span>
 			</button>
-			<a
-				className="navbar-brand abs"
-				href="#">Flare</a>
+			<a className="navbar-brand abs btn-click">Flare</a>
 			<div
 				className="navbar-collapse collapse"
 				id="collapsingNavbar">
 				<ul className="navbar-nav ml-auto">
 					<li className="nav-item">
 						<a
-							className="nav-link"
+							className="nav-link btn-click"
 							onClick={(event) => this.handleLinkClick(event, "Admin")}
 							data-target="#myModal"
 							data-toggle="modal">
 							<i
 								className="fa fa-user fa-lg"
-								aria-hidden="true"></i>
+								aria-hidden="true" />
 						</a>
 					</li>
 				</ul>
