@@ -24,15 +24,15 @@ class LoginForm extends Component {
 						</div>
 						<div className="form-group">
 								<input className="form-control"
-								       type="email"
-								       placeholder="E-Mail"
-								       required={true} />
+										 type="email"
+										 placeholder="E-Mail"
+										 required={true} />
 						</div>
 						<div className="form-group mb-4">
 								<input className="form-control"
-							       type="password"
-							       placeholder="Passwort"
-							       required={true} />
+									 type="password"
+									 placeholder="Passwort"
+									 required={true} />
 						</div>
 						<input className="btn btn-success full-width-button btn-click" type="submit" value="Login" />
 					</form>

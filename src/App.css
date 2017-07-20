@@ -1,80 +1,80 @@
 .font-size-50 {
-    font-size: 50px;
+	font-size: 50px;
 }
 
 .vh-80 {
-    height: 80vh;
+	height: 80vh;
 }
 
 .text-align-center {
-    text-align: center;
+	text-align: center;
 }
 
 .app-icon {
-    width: 130px;
-    height: 130px;
+	width: 130px;
+	height: 130px;
 }
 
 .btn, .btn-group {
-    height: 75px;
-    width: 100%;
-    max-width: 400px;
+	height: 75px;
+	width: 100%;
+	max-width: 400px;
 }
 
 .login-form {
-    width: 400px;
-    max-width: 100%;
+	width: 400px;
+	max-width: 100%;
 }
 
 .btn-success {
-    background-color: #44AF69 !important;
-    border-color: #44AF69 !important;
+	background-color: #44AF69 !important;
+	border-color: #44AF69 !important;
 }
 
 .btn-danger {
-    background-color: #93032E !important;
-    border-color: #93032E !important;
+	background-color: #93032E !important;
+	border-color: #93032E !important;
 }
 
 .btn-click {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .fa-walk {
-    position: relative;
+	position: relative;
 }
 .fa-walk:after {
-    background: #44AF69;
-    bottom: 0;
-    content: '';
-    height: .435em;
-    position: absolute;
-    right: 0;
-    width: .285em;
+	background: #44AF69;
+	bottom: 0;
+	content: '';
+	height: .435em;
+	position: absolute;
+	right: 0;
+	width: .285em;
 }
 
 .fa {
-    font-size: 22px !important;
+	font-size: 22px !important;
 }
 
 .no-icon {
-    font-size: 35px !important;
+	font-size: 35px !important;
 }
 
 .full-width-button {
-    width: 100%;
-    max-width: 100% !important;
-    height: 50px;
+	width: 100%;
+	max-width: 100% !important;
+	height: 50px;
 }
 
 .d-flex {
-    display: flex
+	display: flex
 }
 
 .flex-column {
-    flex-direction: column
+	flex-direction: column
 }
 
 .justify-content-center {
-    justify-content: center
+	justify-content: center
 }
