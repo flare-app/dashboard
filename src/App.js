@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import './App.css';
 import LoginUtils from "./LoginView/LoginUtils";
-import LoginForm from "./LoginView/LoginForm";
+import Login from "./LoginView/Login";
 import Dashboard from "./DashboardView/Dashboard";
 import Administration from "./AdministrationView/Administration";
+import './App.css';
 global.jQuery = require('jquery');
 global.Tether = require('tether');
 require('bootstrap');
@@ -15,10 +14,14 @@ class App extends Component {
 	constructor() {
 		super();
 		this.changeView = this.changeView.bind(this);
+		this.changeViewNotAllowed = this.changeViewNotAllowed.bind(this);
 		this.state = {
 			currentView: <Dashboard changeView={this.changeView}/>
 		};
 	}
+
+	changeViewNotAllowed() {};
+
 
 	changeView(newView) {
 		switch(newView) {
@@ -38,7 +41,7 @@ class App extends Component {
 
 	render() {
 		if (!LoginUtils.isLoggedIn()) {
-			return <LoginForm/>
+			return <Login changeView={this.changeViewNotAllowed}/>
 		}
 		return this.state.currentView;
 	}
