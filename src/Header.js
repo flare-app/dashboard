@@ -15,15 +15,28 @@ class Header extends Component {
 	render() {
 		return (
 		<nav className="navbar navbar-toggleable-sm navbar-light bg-faded">
-			<button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+			<button
+				className="navbar-toggler navbar-toggler-right"
+				type="button" data-toggle="collapse"
+				data-target="#collapsingNavbar">
 				<span className="navbar-toggler-icon"></span>
 			</button>
-			<a className="navbar-brand abs" href="#">Flare</a>
-			<div className="navbar-collapse collapse" id="collapsingNavbar">
+			<a
+				className="navbar-brand abs"
+				href="#">Flare</a>
+			<div
+				className="navbar-collapse collapse"
+				id="collapsingNavbar">
 				<ul className="navbar-nav ml-auto">
 					<li className="nav-item">
-						<a className="nav-link" onClick={(event) => this.handleLinkClick(event, "Admin")} data-target="#myModal" data-toggle="modal">
-							<i className="fa fa-user fa-lg" aria-hidden="true"></i>
+						<a
+							className="nav-link"
+							onClick={(event) => this.handleLinkClick(event, "Admin")}
+							data-target="#myModal"
+							data-toggle="modal">
+							<i
+								className="fa fa-user fa-lg"
+								aria-hidden="true"></i>
 						</a>
 					</li>
 				</ul>
