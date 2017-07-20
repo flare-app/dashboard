@@ -1,7 +1,6 @@
 class LoginUtils {
 	static isLoggedIn() {
-		const token = localStorage.getItem("authToken");
-		return token !== null;
+		return !!localStorage.getItem("authToken");
 	}
 
 	static logIn() {
