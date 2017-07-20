@@ -1,4 +1,3 @@
-import UserIcon from './user.svg'
 import React, { Component } from 'react';
 import './App.css';
 
