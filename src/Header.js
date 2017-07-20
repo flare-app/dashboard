@@ -23,7 +23,7 @@ class Header extends Component {
 				<ul className="navbar-nav ml-auto">
 					<li className="nav-item">
 						<a className="nav-link" onClick={(event) => this.handleLinkClick(event, "Admin")} data-target="#myModal" data-toggle="modal">
-							<i className="fa fa-user" aria-hidden="true"></i>
+							<i className="fa fa-user fa-lg" aria-hidden="true"></i>
 						</a>
 					</li>
 				</ul>
