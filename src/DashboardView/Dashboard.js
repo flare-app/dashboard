@@ -31,8 +31,8 @@ class Dashboard extends Component {
 		return (
 			<div>
 				<Header changeView={this.props.changeView}/>
-				<div className="clock-container">
-				<span className="clock">
+				<div className="text-align-center">
+				<span className="font-size-50">
 					{this.state.currentTime}
 				</span>
 				</div>
