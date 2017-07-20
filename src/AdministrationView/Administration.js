@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import Header from "../Header";
+import UserList from "./UserList";
 
 class Administration extends Component {
 	render() {
 		return (
 			<div>
-				Administration
+				<Header changeView={this.props.changeView}/>
+				<div className="container-fluid">
+					<UserList />
+				</div>
 			</div>
 		);
 	}
