@@ -5,23 +5,20 @@ class UserCard extends Component {
 	render() {
 		return (
 			<div className="row justify-content-between user-card">
-				<div className="col-4">
-					<span className="margin-right">Name</span>
-					<span>
+					<span className="col-10">{this.props.userName}</span>
+					<span className="col-2 ">
+						<div className="row align-items-center full-height">
 						<i
-							className="fa fa-user fa-lg"
+							className="col fa fa-user fa-lg"
 							aria-hidden="true"></i>
 						<i
-							className="fa fa-user fa-lg"
+							className="col fa fa-user fa-lg"
 							aria-hidden="true"></i>
 						<i
-							className="fa fa-user fa-lg"
+							className="col fa fa-user fa-lg"
 							aria-hidden="true"></i>
+						</div>
 					</span>
-				</div>
-				<div className="col-4">
-					Time to arrival:
-				</div>
 			</div>
 		);
 	}
