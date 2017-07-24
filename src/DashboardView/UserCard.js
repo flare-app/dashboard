@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import icon from "./../resources/app-icon.svg"
 import './../App.css';
 
 class UserCard extends Component {
@@ -8,15 +9,9 @@ class UserCard extends Component {
 					<span className="col-10">{this.props.userName}</span>
 					<span className="col-2 ">
 						<div className="row align-items-center full-height">
-						<i
-							className="col fa fa-user fa-lg"
-							aria-hidden="true"></i>
-						<i
-							className="col fa fa-user fa-lg"
-							aria-hidden="true"></i>
-						<i
-							className="col fa fa-user fa-lg"
-							aria-hidden="true"></i>
+							{this.props.qualifications.map((qual, index) => {
+								return <div className="col" key={index}> <img className="d-block"src={icon} height="20px" width="20px"/></div>;
+							})}
 						</div>
 					</span>
 			</div>
