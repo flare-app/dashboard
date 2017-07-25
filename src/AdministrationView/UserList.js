@@ -19,12 +19,14 @@ class UserList extends Component {
 
 	render() {
 		return (
-			<ul style={{listStyle: "none"}}>
-				<li style={{fontSize: "24px"}}>{this.state.addUserRendering}</li>
-				<li style={{height: "48px", fontSize: "36px"}}><div>Horst</div></li>
-				<li style={{height: "48px", fontSize: "36px"}}><div>Horst</div></li>
-				<li style={{height: "48px", fontSize: "36px"}}><div>Horst</div></li>
-			</ul>
+			<div className="margin-top-2vh">
+				<ul style={{listStyle: "none"}}>
+					<li style={{fontSize: "24px"}}>{this.state.addUserRendering}</li>
+					<li style={{height: "48px", fontSize: "36px"}}><div>Horst</div></li>
+					<li style={{height: "48px", fontSize: "36px"}}><div>Horst</div></li>
+					<li style={{height: "48px", fontSize: "36px"}}><div>Horst</div></li>
+				</ul>
+			</div>
 		);
 	}
 }
