@@ -3,8 +3,8 @@ class LoginUtils {
 		return !!localStorage.getItem("authToken");
 	}
 
-	static logIn() {
-		localStorage.setItem("authToken", "token");
+	static logIn(authToken) {
+		localStorage.setItem("authToken", authToken);
 	}
 
 	static logOut() {

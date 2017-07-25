@@ -53,6 +53,21 @@
 	width: .285em;
 }
 
+.form-check-label {
+	font-size: 14px;
+	vertical-align: top;
+	margin-top: 4px;
+	margin-left: 8px;
+	padding-right: 4px;
+}
+
+.form-check-input {
+	left: 0;
+	margin-left: 0 !important;
+	height: 20px;
+	width: 20px
+}
+
 .fa {
 	font-size: 22px !important;
 }
@@ -77,6 +92,14 @@
 
 .justify-content-center {
 	justify-content: center
+}
+
+.margin-top-2vh {
+	margin-top: 2vh;
+}
+
+.alert:first-letter {
+	text-transform: capitalize;
 }
 
 .margin-right {

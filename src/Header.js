@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import LoginUtils from "./LoginView/LoginUtils";
 
 class Header extends Component {
 	constructor(props) {
@@ -34,6 +35,20 @@ class Header extends Component {
 							data-toggle="modal">
 							<i
 								className="fa fa-user fa-lg"
+								aria-hidden="true" />
+						</a>
+					</li>
+					<li className="nav-item">
+						<a
+							className="nav-link btn-click"
+							onClick={(event) => {
+								LoginUtils.logOut();
+								this.handleLinkClick(event, "");
+							}}
+							data-target="#myModal"
+							data-toggle="modal">
+							<i
+								className="fa fa-power-off fa-lg"
 								aria-hidden="true" />
 						</a>
 					</li>

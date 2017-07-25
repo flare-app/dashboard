@@ -8,7 +8,7 @@ global.jQuery = require('jquery');
 global.Tether = require('tether');
 require('bootstrap');
 require('bootstrap/dist/css/bootstrap.css');
-require('font-awesome/css/font-awesome.min.css');;
+require('font-awesome/css/font-awesome.min.css');
 
 class App extends Component {
 	constructor() {
@@ -16,7 +16,7 @@ class App extends Component {
 		this.changeView = this.changeView.bind(this);
 		this.changeViewNotAllowed = this.changeViewNotAllowed.bind(this);
 		this.state = {
-			currentView: <Dashboard changeView={this.changeView}/>
+			currentView: <Administration changeView={this.changeView}/>
 		};
 	}
 
@@ -41,7 +41,7 @@ class App extends Component {
 
 	render() {
 		if (!LoginUtils.isLoggedIn()) {
-			return <Login changeView={this.changeViewNotAllowed}/>
+			return <Login changeView={this.changeViewNotAllowed} redirect={this.changeView} />
 		}
 		return this.state.currentView;
 	}
