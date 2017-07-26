@@ -17,9 +17,13 @@ class Dashboard extends Component {
 	}
 
 	componentDidMount(){
-		window.setInterval(function () {
+		this.intervalListener = window.setInterval(function () {
 			this.setTime();
 		}.bind(this), 1000);
+	}
+
+	componentWillUnmount() {
+		window.clearInterval(this.intervalListener);
 	}
 
 	setTime() {
