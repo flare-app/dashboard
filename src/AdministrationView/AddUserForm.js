@@ -9,7 +9,7 @@ class AddUserForm extends Component {
 		this.handleLastNameChange = this.handleLastNameChange.bind(this);
 		this.handleEmailChange = this.handleEmailChange.bind(this);
 		this.handleSkillChange = this.handleSkillChange.bind(this);
-		this.getSkillIcon = this.getSkillIcon.bind(this);
+		this.getSkillIconClassName = this.getSkillIconClassName.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 
 		this.state = {
@@ -56,7 +56,7 @@ class AddUserForm extends Component {
 		this.setState({skills: currentSkills});
 	}
 
-	getSkillIcon(skillName) {
+	getSkillIconClassName(skillName) {
 		if (this.state.skills[skillName]) {
 			return "skill-icon-container-active";
 		}
@@ -124,7 +124,7 @@ class AddUserForm extends Component {
 					<div className="form-group mb-2 row">
 						<div className="col-3">
 							<a onClick={() => this.handleSkillChange("respirator")}>
-								<div className={"skill-icon-container " + this.getSkillIcon("respirator")}>
+								<div className={"skill-icon-container " + this.getSkillIconClassName("respirator")}>
 									<div className="skill-icon-content">
 										<i className="fa fa-user" aria-hidden="true" />
 									</div>
@@ -133,7 +133,7 @@ class AddUserForm extends Component {
 						</div>
 						<div className="col-3">
 							<a onClick={() => this.handleSkillChange("operator")}>
-								<div className={"skill-icon-container " + this.getSkillIcon("operator")}>
+								<div className={"skill-icon-container " + this.getSkillIconClassName("operator")}>
 									<div className="skill-icon-content">
 										<i className="fa fa-user" aria-hidden="true" />
 									</div>
@@ -142,7 +142,7 @@ class AddUserForm extends Component {
 						</div>
 						<div className="col-3">
 							<a onClick={() => this.handleSkillChange("chief")}>
-								<div className={"skill-icon-container " + this.getSkillIcon("chief")}>
+								<div className={"skill-icon-container " + this.getSkillIconClassName("chief")}>
 									<div className="skill-icon-content">
 										<i className="fa fa-user" aria-hidden="true" />
 									</div>
@@ -151,7 +151,7 @@ class AddUserForm extends Component {
 						</div>
 						<div className="col-3">
 							<a onClick={() => this.handleSkillChange("hose")}>
-								<div className={"skill-icon-container " + this.getSkillIcon("hose")}>
+								<div className={"skill-icon-container " + this.getSkillIconClassName("hose")}>
 									<div className="skill-icon-content">
 										<i className="fa fa-user" aria-hidden="true" />
 									</div>
