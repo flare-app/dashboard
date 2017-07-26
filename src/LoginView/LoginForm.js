@@ -14,7 +14,7 @@ class LoginForm extends Component {
 			},
 			email: "",
 			password: "",
-			loginError: null
+			loginError: null,
 		};
 
 		this.renderErrorMessage = this.renderErrorMessage.bind(this);
@@ -108,18 +108,17 @@ class LoginForm extends Component {
 
 	renderCityUnitSelection() {
 		if (!this.state.availableUnits) {
-			return <div className="form-group">Loading...</div>
+			return <div className="form-group row"><i className="fa fa-circle-o-notch fa-spin" style={{paddingLeft: "20px", paddingRight: "20px"}}/><div>Loading...</div></div>
 		}
-		const dropDownOptions = [];
-		this.state.availableUnits.forEach((unit) => {
-			dropDownOptions.push(<option value={LoginForm.composeInputString(unit)}>{LoginForm.composeInputString(unit)}</option>);
-		});
 		return (
 			<div className="form-group">
 				<select className="form-control" required={true} value={LoginForm.composeInputString(this.state.unit)}
 				        onChange={this.handleCityChange}>
 					<option value="" disabled>Wähle deine Stadt und Einheit</option>
-					{dropDownOptions}
+					{this.state.availableUnits.map((unit) => {
+						return <option
+							value={LoginForm.composeInputString(unit)}>{LoginForm.composeInputString(unit)}</option>;
+					})}
 				</select>
 			</div>
 		);
@@ -162,7 +161,7 @@ class LoginForm extends Component {
 							       required={true}/>
 						</div>
 						<input className="btn btn-success full-width-button btn-click" onClick={this.handleSubmit}
-						       type="submit" value="Login"/>
+						       type="submit" value="Login" />
 					</form>
 				</div>
 			</div>
